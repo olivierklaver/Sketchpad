@@ -3,7 +3,7 @@ Sketchpad
 
 Canvas prototyping framework inspired by Processing and Codea.
 
-# API
+## API
 
 ### Structural
 Structural elements, are functions you can add to your sketch (program). Sketchpad will automatically call these functions.
