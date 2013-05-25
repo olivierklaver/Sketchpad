@@ -8,9 +8,9 @@ Canvas prototyping framework inspired by Processing and Codea.
 ## Structural
 Structural elements, are functions you can add to your sketch (program). Sketchpad will automatically call these functions.
 
-'''javascript
+```javascript
 init()
-'''
+```
 Called before setup and before the canvas element is created.
 
 ===
