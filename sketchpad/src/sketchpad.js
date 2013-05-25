@@ -166,7 +166,7 @@
 
 
     /**
-     * setup - Gets called once, after the canvas element is initialized
+     * setup - Gets called once, after the canvas element is initialised
      */
 
 
