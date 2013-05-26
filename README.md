@@ -2,7 +2,7 @@
 
 ## Sketchpad - a canvas prototyping framework inspired by Processing and Codea.
 
-Sketchpad is a simple framework for writing HTML5 Canvas programs.
+Sketchpad is a simple framework for prototyping HTML5 Canvas programs quickly.
 
 
 ## API
@@ -57,13 +57,13 @@ Can be used to tell sketchpad where to create the canvas element.
 - #### context
 	A 2d context for the canvas element. This is a normal HTML5 Canvas context object.
 	
-	For the specivication please go to:
+	Canvas 2d Context specification:
 [HTML Canvas 2D Context - Draft](http://www.w3.org/html/wg/drafts/2dcontext/html5_canvas/)
 
-	A introduciton to the Canvas:
+	An introduction to the Canvas:
 [Diveintohtml5 - canvas](http://diveintohtml5.info/canvas.html)
 
-	A handy cheat cheat - For when you are up and running with the basics.
+	An handy cheat cheat - For when you are up and running with the basics.
 [HTML5 Canvas Cheat Sheet](http://blog.nihilogic.dk/2009/02/html5-canvas-cheat-sheet.html)
 
 	Example:
@@ -100,6 +100,8 @@ Can be used to tell sketchpad where to create the canvas element.
 
 - #### canvasContainerSelector
 	The parent HTML tag for the canvas element sketchpad creates for you.
+	Default:
+	body
 
 	Example:
 	```html
@@ -128,6 +130,33 @@ Can be used to tell sketchpad where to create the canvas element.
 	background("rgba(255, 0, 0, 0.4)");
 	```
 
+
+### Input
+TODO!
+
+- scope.mouseX = null;
+- scope.mouseY = null;
+- scope.mouseIsPressedLeft = false;
+- scope.mouseIsPressedRight = false;
+- scope.key = "";
+- scope.keyIsPressed = false;
+
+### Parameters
+	```javascript
+
+/**
+     * parameter
+     *
+     * dynamically adds a html slider that can be used to change variable values on the fly.
+     *
+     * Only supports Global Number type variables.
+     */
+
+    scope.parameter = function (/*String*/ _parameter, /*String*/ _label, /*[int]*/ _min, /*[int]*/ _max, /*[int]*/ _step) {
+
+        objParameter(window, _parameter, _label, _min, _max, _step);
+    };
+```
 
 ## License
 
