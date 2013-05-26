@@ -8,23 +8,23 @@
 ### Structure
 Structural elements, are functions you can add to your sketch (program). Sketchpad will automatically call these functions.
 
-#### init()
+- #### init()
 
-Optional - Called before the canvas element is created.
+	Optional - Called before the canvas element is created.
 Can be used to tell sketchpad where to create the canvas element.
 
-Example:
-```javascript
-function init(){
-	canvasContainerSelector = "#stage";
-}
-```
+	Example:
+	```javascript
+		function init(){
+			canvasContainerSelector = "#stage";
+		}
+	```
 
-#### setup()
-Optional - Called once, after the canvas element is initialised and before the draw function.
+- #### setup()
+	Optional - Called once, after the canvas element is initialised and before the draw function.
 
-Example:
-```javascript
+	Example:
+	```javascript
 function setup(){
 	// set FPS
 	frameRate = 30;
@@ -33,7 +33,7 @@ function setup(){
     width = 700;
     height = 600;
 }
-```
+	```
 
 #### draw()
 Optional - Called on every frame after setup has completed.
@@ -51,9 +51,28 @@ Related:
 
 
 ### Environment
+#### context
+A 2d context for the canvas element. This is a normal HTML5 Canvas context object. 
+For the specivication please go to:
+[HTML Canvas 2D Context - Draft](http://www.w3.org/html/wg/drafts/2dcontext/html5_canvas/)
+
+A introduciton to the Canvas:
+[Diveintohtml5 - canvas](http://diveintohtml5.info/canvas.html)
+
+A handy cheat cheat - For when you are up and running with the basics.
+[HTML5 Canvas Cheat Sheet](http://blog.nihilogic.dk/2009/02/html5-canvas-cheat-sheet.html)
+
+Example:
+```javascript
+function setup(){
+	context.fillStyle   = '#00f'; // blue
+	context.strokeStyle = '#f00'; // red
+	context.lineWidth   = 4;
+}
+```
 
 #### canvasContainerSelector
-Optional - The parent HTML tag for the canvas element sketchpad creates for you.
+The parent HTML tag for the canvas element sketchpad creates for you.
 
 Example:
 ```javascript
@@ -63,7 +82,7 @@ function init(){
 ```
 
 #### size()
-Optional - Set the size of the canvas element.
+Set the size of the canvas element.
 
 Example:
 ```javascript
@@ -74,7 +93,7 @@ function setup(){
 
 
 #### background(color)
-Optional - Set the background color.
+Set the background color.
 
 Examples:
 ```javascript
@@ -97,6 +116,7 @@ Example:
 function setup(){
 	frameRate = 30;
 }
+```
 
 ## License
 
