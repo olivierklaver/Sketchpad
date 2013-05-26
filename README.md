@@ -131,17 +131,6 @@ Can be used to tell sketchpad where to create the canvas element.
 	```
 
 
-### Input
-TODO!
-
-- scope.mouseX = null;
-- scope.mouseY = null;
-- scope.mouseIsPressedLeft = false;
-- scope.mouseIsPressedRight = false;
-- scope.key = "";
-- scope.keyIsPressed = false;
-
-
 ### Parameters
 dynamically adds a html slider that can be used to change properties on the fly.
 
@@ -161,6 +150,17 @@ Example:
 var ball = {x:50, y:50};
 objParameter(ball, "x", "x position:", 1, 100);
 ```
+
+### Input
+TODO!
+
+- scope.mouseX = null;
+- scope.mouseY = null;
+- scope.mouseIsPressedLeft = false;
+- scope.mouseIsPressedRight = false;
+- scope.key = "";
+- scope.keyIsPressed = false;
+
 
 ## License
 
