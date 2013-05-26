@@ -2,14 +2,14 @@
 
 ## Sketchpad - a canvas prototyping framework inspired by Processing and Codea.
 
-### API
+## API
 
-#### Structure
+### Structure
 Structural elements, are functions you can add to your sketch (program). Sketchpad will automatically call these functions.
 
-##### init()
+#### init()
 
-Called before the canvas element is created.
+Optional - Called before the canvas element is created.
 Can be used to tell sketchpad where to create the canvas element.
 
 Example:
@@ -19,13 +19,20 @@ function init(){
 }
 ```
 
-- setup()
-Gets called once, after the canvas element is initialised and before the draw function.
+#### setup()
+Optional - Called once, after the canvas element is initialised and before the draw function.
+
+Example:
 ```javascript
-function setup(){...}
+function setup(){
+	frameRate = 60;
+	
+    width = 700;
+    height = 600;
+}
 ```
 
-- draw()
+#### draw()
 Called on every frame after setup has completed.
 ```javascript
 function draw(){
@@ -35,7 +42,7 @@ function draw(){
 Related:
 - frameRate
 
-#### Environment
+### Environment
 ```javascript
 size(width, height)
 ```
@@ -51,3 +58,8 @@ frameRate
 ```
 Defines how many times per second the draw function is called.
 Default: 60 fps.
+
+## License
+
+MIT License  
+Copyright (c) Olivier Klaver
