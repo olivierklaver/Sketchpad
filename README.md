@@ -15,9 +15,9 @@ Can be used to tell sketchpad where to create the canvas element.
 
 	Example:
 	```javascript
-		function init(){
-			canvasContainerSelector = "#stage";
-		}
+	function init(){
+		canvasContainerSelector = "#stage";
+	}
 	```
 
 - #### setup()
