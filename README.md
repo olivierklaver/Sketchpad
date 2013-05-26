@@ -4,6 +4,7 @@
 
 ## API
 
+
 ### Structure
 Structural elements, are functions you can add to your sketch (program). Sketchpad will automatically call these functions.
 
@@ -25,39 +26,77 @@ Optional - Called once, after the canvas element is initialised and before the d
 Example:
 ```javascript
 function setup(){
-	frameRate = 60;
+	// set FPS
+	frameRate = 30;
 	
+	// set canvas size
     width = 700;
     height = 600;
 }
 ```
 
 #### draw()
-Called on every frame after setup has completed.
+Optional - Called on every frame after setup has completed.
+
+Example:
 ```javascript
 function draw(){
 	// this code is called 60x per second…
+	console.log("Draw Frame!");
 }
 ```
+
 Related:
 - frameRate
 
+
 ### Environment
+
+#### canvasContainerSelector
+Optional - The parent HTML tag for the canvas element sketchpad creates for you.
+
+Example:
 ```javascript
-size(width, height)
+function init(){
+	canvasContainerSelector = "#stage";
+}
 ```
-Set the size of the canvas element.
+
+#### size()
+Optional - Set the size of the canvas element.
+
+Example:
+```javascript
+function setup(){
+	size(width, height);
+}
+```
+
+
+#### background(color)
+Optional - Set the background color.
+
+Examples:
+```javascript
+background("#000");
+```
 
 ```javascript
-background(color)
+background("rgba(255, 0, 0, 0.4)");
 ```
-Set the background color.
 
+
+#### frameRate
+The amount of times per second the draw function is called.
+
+Default:
+60
+
+Example:
 ```javascript
-frameRate
-```
-Defines how many times per second the draw function is called.
-Default: 60 fps.
+function setup(){
+	frameRate = 30;
+}
 
 ## License
 
