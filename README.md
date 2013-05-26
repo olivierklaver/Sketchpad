@@ -134,8 +134,8 @@ Can be used to tell sketchpad where to create the canvas element.
 ### Parameters
 dynamically adds a html slider that can be used to change properties on the fly.
 
-- #### parameter(globalVar, label, min, max, steps)
-- #### background(color)
+
+- #### parameter(global, label, min, max, steps)
 Use for global variables.
 
 Example:
