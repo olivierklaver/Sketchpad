@@ -141,21 +141,25 @@ TODO!
 - scope.key = "";
 - scope.keyIsPressed = false;
 
+
 ### Parameters
-	```javascript
+dynamically adds a html slider that can be used to change properties on the fly.
 
-/**
-     * parameter
-     *
-     * dynamically adds a html slider that can be used to change variable values on the fly.
-     *
-     * Only supports Global Number type variables.
-     */
+- #### parameter(globalVar, label, min, max, steps)
+Use for global variables.
 
-    scope.parameter = function (/*String*/ _parameter, /*String*/ _label, /*[int]*/ _min, /*[int]*/ _max, /*[int]*/ _step) {
+Example:
+```javascript
+parameter("frameRate", "FPS:", 0, 60);
+```
 
-        objParameter(window, _parameter, _label, _min, _max, _step);
-    };
+- #### objParameter(scope, var, label, min, max, steps)
+For object properties.
+
+Example:
+```javascript
+var ball = {x:50, y:50};
+objParameter(ball, "x", "x position:", 1, 100);
 ```
 
 ## License
