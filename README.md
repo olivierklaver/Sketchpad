@@ -136,21 +136,21 @@ dynamically adds a html slider that can be used to change properties on the fly.
 
 
 - #### parameter(global, label, min, max, steps)
-Use for global variables.
+	Use for global variables.
 
-Example:
-```javascript
-parameter("frameRate", "FPS:", 0, 60);
-```
+	Example:
+	```javascript
+	parameter("frameRate", "FPS:", 0, 60);
+	```
 
 - #### objParameter(scope, var, label, min, max, steps)
-For object properties.
+	For object properties.
 
-Example:
-```javascript
-var ball = {x:50, y:50};
-objParameter(ball, "x", "x position:", 1, 100);
-```
+	Example:
+	```javascript
+	var ball = {x:50, y:50};
+	objParameter(ball, "x", "x position:", 1, 100);
+	```
 
 ### Input
 TODO!
