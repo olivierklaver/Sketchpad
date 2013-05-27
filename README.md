@@ -214,14 +214,13 @@ Dynamically adds a html slider that can be used to change properties on the fly.
 
 ## IMPORTANT NOTE
 Sketchpad is a prototyping tool that is not designed to be used in production websites.
-The program will dynamically add a range of variables and functions to
-the _Global Object (window). Hence this library should not be used in a production
- * site, since sketchpad code may conflict with other JavaScript libraries.
- * The code also makes no afford to validate browser support for most of the
- * language features used.
- * All this is done by design, since the main purpose of this library is to give
- * novice programmers a clean API that allows them to visually learn about core
- * programming principles.
+
+	- The program will dynamically add a range of variables and functions to the _Global Object (window). 
+	Hence sketchpad code may conflict with other JavaScript code / libraries.
+
+	- The framework makes no afford to validate browser support for most of the language features used.
+
+All this is done by design.
 
 
 ## License
