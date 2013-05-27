@@ -3,18 +3,8 @@
  *
  * This is a JavaScript framework inspired by Processing and Codea.
  * This library is design for educational purposes and aims to give
- * new programmers a simple API to experiment with JavaScript and
+ * (new) programmers a simple API to experiment with JavaScript and
  * the HTML5 Canvas API.
- *
- * WARNING!
- * The program will dynamically add a range of variables and functions to
- * the _Global Object (window). Hence this library should not be used in a production
- * site, since sketchpad code may conflict with other JavaScript libraries.
- * The code also makes no afford to validate browser support for most of the
- * language features used.
- * All this is done by design, since the main purpose of this library is to give
- * novice programmers a clean API that allows them to visually learn about core
- * programming principles.
  *
  * @version: 0.5
  */
