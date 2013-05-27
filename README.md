@@ -31,10 +31,6 @@ Can be used to tell sketchpad where to create the canvas element.
 	function setup(){
 		// set FPS
 		frameRate = 30;
-	
-		// set canvas size
-    	width = 700;
-    	height = 600;
 	}
 	```
 
