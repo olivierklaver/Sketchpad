@@ -5,6 +5,9 @@
 Sketchpad is a simple framework for prototyping HTML5 Canvas programs quickly.
 
 
+## Example
+[Sketchpad example - Bounce demo](http://olivierklaver.github.io/Sketchpad/)
+
 ## API
 
 
