@@ -10,7 +10,7 @@ Sketchpad is a simple framework for prototyping HTML5 Canvas programs quickly.
 
 ## API
 
-- init()
+- <a href="#init">init()</a>
 - setup()
 - draw()
 - context
@@ -31,7 +31,7 @@ Sketchpad is a simple framework for prototyping HTML5 Canvas programs quickly.
 ### Structure
 Structural elements, are functions you can add to your sketch (program). Sketchpad will automatically call these functions.
 
-- #### init()
+- ####<a id="init"></a> init()
 
 	Optional - Called before the canvas element is created.
 Can be used to tell sketchpad where to create the canvas element.
