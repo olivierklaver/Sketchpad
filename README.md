@@ -10,6 +10,23 @@ Sketchpad is a simple framework for prototyping HTML5 Canvas programs quickly.
 
 ## API
 
+- init()
+- setup()
+- draw()
+- context
+- size()
+- frameRate
+- canvasContainerSelector
+- background(color)
+- parameter(global, label, min, max, steps)
+- objParameter(scope, var, label, min, max, steps)
+- mouseX
+- mouseY
+- mouseIsPressedLeft
+- mouseIsPressedRight
+- key
+- keyIsPressed
+
 
 ### Structure
 Structural elements, are functions you can add to your sketch (program). Sketchpad will automatically call these functions.
@@ -226,5 +243,4 @@ All this is done by design.
 
 ## License
 
-MIT License  
-Copyright (c) Olivier Klaver
+MIT License
